@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('../css/variebles.css');
+@import url('../css/navbar.css');
+@import url('../css/home.css');
+@import url('../css/footer.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    position: relative;
+    text-transform: uppercase;
+    color: var(--color-neutral-8);
+
+    &::before {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 4px;
+        position: absolute;
+        border-radius: 30px;
+        background-color: var(--color-primary-1);
+        bottom: 0;
+    }
+}
+
+a.btn{
+    text-decoration: none;
+}
+
+/*style btn general*/
+
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: transparent;
+    tansition: background-color .3s ease;
+}
+
+.btn-outlined{
+    background-color: transparent;
+    color: var(--color-primary-1);
+    border:2px solid var(--color-primary-1);
+
+    &:hover {
+        background-color: var(--color-primary-1);
+        color: var(--color-neutral-0);
+    }
+}
+
+.btn-mobile {
+    font-size: 1.5rem;
+}
+
+.btn-default {
+    background-color: var(--color-primary-1);
+    color: var(--color-neutral-0);
+
+    &:hover {
+        background-color: var(--color-neutral-1);
+        color: var(--color-primary-1);
+    }
+}
