@@ -7,3 +7,9 @@ mobileBtn.addEventListener('click', () => {
     icon.classList.toggle('fa-times');
     icon.classList.toggle('fa-bars');
 })
+
+const Imgchange = document.querySelector('#Imgchange');
+
+Imgchange.addEventListener('click', () => {
+    Imgchange.src = Imgchange.src === './src/images/me/2.jpeg' ? './src/images/me/1.jpeg' : './src/images/me/2.jpeg';
+})
